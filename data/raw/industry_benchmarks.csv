@@ -1,0 +1,8 @@
+segment,metric,value_pct_monthly,value_pct_annualized,source,as_of,notes
+T-Mobile US postpaid phone,monthly churn,0.90,10.3,S&P Global Market Intelligence,Q2 2025,Best-in-class US carrier
+AT&T postpaid phone,monthly churn,0.87,10.0,S&P Global Market Intelligence,Q2 2025,Best-in-class US carrier
+US broadband (wireline),monthly churn,1.30,14.9,S&P Global Market Intelligence,Q3 2025 (reported Feb 2026),Industry-wide broadband average
+US wireless postpaid (industry-wide),monthly churn,1.25,13.9,S&P Global Market Intelligence,Q3 2025,Includes non-elite carriers
+Postpaid industry range (low end),monthly churn,0.75,8.7,ChurnCost.com telecom benchmark compilation,2026,Low end of typical postpaid range
+Postpaid industry range (high end),monthly churn,3.00,30.0,ChurnCost.com telecom benchmark compilation,2026,High end of typical postpaid range
+Blended telecom industry (postpaid+prepaid),annual churn,,22.50,Focus Digital / CustomerGauge industry churn benchmarks,2025,Midpoint of commonly cited 20-25% annual range
