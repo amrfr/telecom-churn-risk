@@ -1,0 +1,7 @@
+{
+  "this_dataset_annualized_churn_pct": 25.3,
+  "best_in_class_us_postpaid_avg_annualized_pct": 10.2,
+  "blended_industry_annualized_pct": 22.5,
+  "how_this_dataset_compares": "This dataset's 25.3% churn rate sits above the ~22% midpoint of the commonly cited blended (postpaid+prepaid) industry range, and well above best-in-class US postpaid carriers (T-Mobile/AT&T average ~10%/yr). Read this as evidence the sample is skewed toward higher-churn segments (month-to-month contracts, fiber internet - see churn_by_contract.csv / churn_by_internet.csv) rather than a representative national postpaid book. It does NOT mean the segment-level findings (contract type, tenure, internet type as churn drivers) are wrong - those directional patterns are well documented industry-wide, independent of this sample's overall level.",
+  "acquisition_vs_retention_cost_context": "Widely cited industry rule of thumb: acquiring a new customer costs 5-10x more than retaining an existing one (see SOURCES.md). This is the economic backdrop for why even a modest-probability retention campaign (see campaign_roi_sensitivity_grid.csv) tends to pencil out."
+}

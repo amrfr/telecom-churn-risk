@@ -1,0 +1,5 @@
+PaymentMethod,ChurnFlag
+Electronic check,0.4146341463414634
+Mailed check,0.20535714285714285
+Bank transfer (automatic),0.17857142857142858
+Credit card (automatic),0.12121212121212122

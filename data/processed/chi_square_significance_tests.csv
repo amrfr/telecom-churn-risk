@@ -1,0 +1,11 @@
+driver,n_categories,degrees_of_freedom,chi_square_statistic,permutation_p_value,significant_at_0.05
+Contract,3,2,94.98,0.0002,True
+TenureBucket,4,3,77.69,0.0002,True
+TechSupport,3,2,67.59,0.0002,True
+OnlineSecurity,3,2,50.84,0.0002,True
+PaymentMethod,4,3,36.44,0.0002,True
+InternetService,3,2,35.78,0.0002,True
+Dependents,2,1,13.98,0.0004,True
+PaperlessBilling,2,1,10.21,0.0022,True
+Partner,2,1,6.92,0.0092,True
+SeniorCitizen,2,1,5.34,0.0246,True

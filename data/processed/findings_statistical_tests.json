@@ -1,0 +1,164 @@
+{
+  "chi_square_significance_tests": [
+    {
+      "driver": "Contract",
+      "n_categories": 3,
+      "degrees_of_freedom": 2,
+      "chi_square_statistic": 94.98,
+      "permutation_p_value": 0.0002,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "TenureBucket",
+      "n_categories": 4,
+      "degrees_of_freedom": 3,
+      "chi_square_statistic": 77.69,
+      "permutation_p_value": 0.0002,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "TechSupport",
+      "n_categories": 3,
+      "degrees_of_freedom": 2,
+      "chi_square_statistic": 67.59,
+      "permutation_p_value": 0.0002,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "OnlineSecurity",
+      "n_categories": 3,
+      "degrees_of_freedom": 2,
+      "chi_square_statistic": 50.84,
+      "permutation_p_value": 0.0002,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "PaymentMethod",
+      "n_categories": 4,
+      "degrees_of_freedom": 3,
+      "chi_square_statistic": 36.44,
+      "permutation_p_value": 0.0002,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "InternetService",
+      "n_categories": 3,
+      "degrees_of_freedom": 2,
+      "chi_square_statistic": 35.78,
+      "permutation_p_value": 0.0002,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "Dependents",
+      "n_categories": 2,
+      "degrees_of_freedom": 1,
+      "chi_square_statistic": 13.98,
+      "permutation_p_value": 0.0004,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "PaperlessBilling",
+      "n_categories": 2,
+      "degrees_of_freedom": 1,
+      "chi_square_statistic": 10.21,
+      "permutation_p_value": 0.0022,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "Partner",
+      "n_categories": 2,
+      "degrees_of_freedom": 1,
+      "chi_square_statistic": 6.92,
+      "permutation_p_value": 0.0092,
+      "significant_at_0.05": true
+    },
+    {
+      "driver": "SeniorCitizen",
+      "n_categories": 2,
+      "degrees_of_freedom": 1,
+      "chi_square_statistic": 5.34,
+      "permutation_p_value": 0.0246,
+      "significant_at_0.05": true
+    }
+  ],
+  "bootstrap_confidence_intervals": [
+    {
+      "segment": "Overall book",
+      "n": 487,
+      "churn_rate": 0.2526,
+      "ci95_low": 0.2156,
+      "ci95_high": 0.2916
+    },
+    {
+      "segment": "Contract = Month-to-month",
+      "n": 276,
+      "churn_rate": 0.4203,
+      "ci95_low": 0.3623,
+      "ci95_high": 0.4783
+    },
+    {
+      "segment": "Contract = One year",
+      "n": 98,
+      "churn_rate": 0.0408,
+      "ci95_low": 0.0102,
+      "ci95_high": 0.0816
+    },
+    {
+      "segment": "Contract = Two year",
+      "n": 113,
+      "churn_rate": 0.0265,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0619
+    },
+    {
+      "segment": "InternetService = DSL",
+      "n": 170,
+      "churn_rate": 0.1941,
+      "ci95_low": 0.141,
+      "ci95_high": 0.2529
+    },
+    {
+      "segment": "InternetService = Fiber optic",
+      "n": 223,
+      "churn_rate": 0.3722,
+      "ci95_low": 0.3094,
+      "ci95_high": 0.435
+    },
+    {
+      "segment": "InternetService = No",
+      "n": 94,
+      "churn_rate": 0.0745,
+      "ci95_low": 0.0213,
+      "ci95_high": 0.1277
+    },
+    {
+      "segment": "TenureBucket = 0-12 mo",
+      "n": 151,
+      "churn_rate": 0.5033,
+      "ci95_low": 0.4238,
+      "ci95_high": 0.5828
+    },
+    {
+      "segment": "TenureBucket = 25-48 mo",
+      "n": 115,
+      "churn_rate": 0.1304,
+      "ci95_low": 0.0696,
+      "ci95_high": 0.1913
+    },
+    {
+      "segment": "TenureBucket = 13-24 mo",
+      "n": 78,
+      "churn_rate": 0.2308,
+      "ci95_low": 0.141,
+      "ci95_high": 0.3205
+    },
+    {
+      "segment": "TenureBucket = 49+ mo",
+      "n": 143,
+      "churn_rate": 0.0979,
+      "ci95_low": 0.0559,
+      "ci95_high": 0.1469
+    }
+  ],
+  "methodology_note": "p-values from 5,000-permutation tests (shuffle Churn label, recompute chi-square); confidence intervals from 5,000-resample bootstrap. No scipy/statsmodels used."
+}

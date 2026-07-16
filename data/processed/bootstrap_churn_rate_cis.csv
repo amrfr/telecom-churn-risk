@@ -1,0 +1,12 @@
+segment,n,churn_rate,ci95_low,ci95_high
+Overall book,487,0.2526,0.2156,0.2916
+Contract = Month-to-month,276,0.4203,0.3623,0.4783
+Contract = One year,98,0.0408,0.0102,0.0816
+Contract = Two year,113,0.0265,0.0,0.0619
+InternetService = DSL,170,0.1941,0.141,0.2529
+InternetService = Fiber optic,223,0.3722,0.3094,0.435
+InternetService = No,94,0.0745,0.0213,0.1277
+TenureBucket = 0-12 mo,151,0.5033,0.4238,0.5828
+TenureBucket = 25-48 mo,115,0.1304,0.0696,0.1913
+TenureBucket = 13-24 mo,78,0.2308,0.141,0.3205
+TenureBucket = 49+ mo,143,0.0979,0.0559,0.1469

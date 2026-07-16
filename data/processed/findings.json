@@ -1,0 +1,418 @@
+{
+  "n_customers": 487,
+  "overall_churn_rate": 0.2526,
+  "total_monthly_recurring_revenue_usd": 32196.2,
+  "mrr_already_lost_to_churn_usd": 8948.4,
+  "churn_rate_by_contract": {
+    "Month-to-month": 42.0,
+    "One year": 4.1,
+    "Two year": 2.7
+  },
+  "churn_rate_by_tenure": {
+    "0-12 mo": 50.3,
+    "13-24 mo": 23.1,
+    "25-48 mo": 13.0,
+    "49+ mo": 9.8
+  },
+  "churn_rate_by_internet": {
+    "Fiber optic": 37.2,
+    "DSL": 19.4,
+    "No": 7.4
+  },
+  "churn_rate_by_payment": {
+    "Electronic check": 41.5,
+    "Mailed check": 20.5,
+    "Bank transfer (automatic)": 17.9,
+    "Credit card (automatic)": 12.1
+  },
+  "model": {
+    "n_train": 389,
+    "n_test": 98,
+    "accuracy": 0.837,
+    "precision": 0.714,
+    "recall": 0.6,
+    "f1": 0.652,
+    "auc": 0.849,
+    "confusion_matrix": {
+      "tp": 15,
+      "tn": 67,
+      "fp": 6,
+      "fn": 10
+    }
+  },
+  "cross_validation": {
+    "k": 5,
+    "per_fold": [
+      {
+        "fold": 1,
+        "n_val": 98,
+        "accuracy": 0.7959183673469388,
+        "precision": 0.5925925925925926,
+        "recall": 0.64,
+        "f1": 0.6153846153846153,
+        "auc": 0.8142465753424656
+      },
+      {
+        "fold": 2,
+        "n_val": 98,
+        "accuracy": 0.7755102040816326,
+        "precision": 0.6,
+        "recall": 0.36,
+        "f1": 0.45,
+        "auc": 0.7939726027397259
+      },
+      {
+        "fold": 3,
+        "n_val": 98,
+        "accuracy": 0.7551020408163265,
+        "precision": 0.5217391304347826,
+        "recall": 0.48,
+        "f1": 0.4999999999999999,
+        "auc": 0.7506849315068493
+      },
+      {
+        "fold": 4,
+        "n_val": 97,
+        "accuracy": 0.8144329896907216,
+        "precision": 0.6363636363636364,
+        "recall": 0.5833333333333334,
+        "f1": 0.6086956521739131,
+        "auc": 0.904109589041096
+      },
+      {
+        "fold": 5,
+        "n_val": 96,
+        "accuracy": 0.8333333333333334,
+        "precision": 0.75,
+        "recall": 0.5,
+        "f1": 0.6,
+        "auc": 0.8894675925925926
+      }
+    ],
+    "summary": {
+      "accuracy": {
+        "mean": 0.795,
+        "std": 0.031
+      },
+      "precision": {
+        "mean": 0.62,
+        "std": 0.084
+      },
+      "recall": {
+        "mean": 0.513,
+        "std": 0.107
+      },
+      "f1": {
+        "mean": 0.555,
+        "std": 0.075
+      },
+      "auc": {
+        "mean": 0.83,
+        "std": 0.065
+      }
+    }
+  },
+  "naive_bayes_crosscheck": {
+    "accuracy": 0.704,
+    "precision": 0.458,
+    "recall": 0.88,
+    "auc": 0.828,
+    "top_drivers_raising_churn": {
+      "gender_Male": -0.001,
+      "StreamingMovies_Yes": -0.001,
+      "PhoneService_Yes": 0.018,
+      "PaperlessBilling_Yes": 0.14,
+      "SeniorCitizen": 0.232,
+      "PaymentMethod_Electronic check": 0.286,
+      "InternetService_Fiber optic": 0.299,
+      "MonthlyCharges": 0.302
+    },
+    "top_drivers_lowering_churn": {
+      "tenure": -0.895,
+      "TotalCharges": -0.6,
+      "Contract_Two year": -0.303,
+      "TechSupport_Yes": -0.235,
+      "Contract_One year": -0.207,
+      "OnlineBackup_No internet service": -0.179,
+      "OnlineSecurity_No internet service": -0.179,
+      "InternetService_No": -0.179
+    }
+  },
+  "model_agreement": {
+    "logreg_top8_raise_churn": [
+      "DeviceProtection_Yes",
+      "InternetService_Fiber optic",
+      "MonthlyCharges",
+      "OnlineBackup_Yes",
+      "PaperlessBilling_Yes",
+      "Partner_Yes",
+      "PaymentMethod_Electronic check",
+      "PaymentMethod_Mailed check"
+    ],
+    "naive_bayes_top8_raise_churn": [
+      "InternetService_Fiber optic",
+      "MonthlyCharges",
+      "PaperlessBilling_Yes",
+      "PaymentMethod_Electronic check",
+      "PhoneService_Yes",
+      "SeniorCitizen",
+      "StreamingMovies_Yes",
+      "gender_Male"
+    ],
+    "overlap_count_of_8": 4,
+    "overlap_features": [
+      "InternetService_Fiber optic",
+      "MonthlyCharges",
+      "PaperlessBilling_Yes",
+      "PaymentMethod_Electronic check"
+    ]
+  },
+  "revenue_at_risk": {
+    "active_customers": 364,
+    "total_active_annualized_revenue_usd": 278973.6,
+    "top_decile_customers": 37,
+    "top_decile_avg_churn_probability": 0.601,
+    "top_decile_annualized_revenue_at_risk_usd": 33868.2,
+    "top2_deciles_annualized_revenue_at_risk_usd": 64483.2,
+    "top2_deciles_share_of_active_revenue_pct": 23.1,
+    "top2_deciles_lift_vs_proportional_pct": 15.3
+  },
+  "survival_analysis": {
+    "method": "Kaplan-Meier, event=churned, censored=still active, from scratch (no lifelines/scipy)",
+    "median_survival_tenure_months": null,
+    "survival_prob_at_12mo": 0.8338,
+    "survival_prob_at_24mo": 0.7854,
+    "survival_prob_at_48mo": 0.7314,
+    "total_estimated_clv_of_active_book_usd": 615217.54,
+    "top_decile_total_estimated_clv_usd": 139673.72
+  },
+  "retention_campaign_roi_illustrative": {
+    "assumptions": {
+      "cost_per_customer_usd": 30.0,
+      "assumed_success_rate": 0.25
+    },
+    "customers_targeted": 73,
+    "campaign_total_cost_usd": 2190.0,
+    "expected_customers_saved": 18.2,
+    "expected_annualized_revenue_saved_usd": 16120.8,
+    "roi_multiple": 6.36
+  },
+  "retention_campaign_sensitivity": {
+    "cost_grid_usd": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "success_rate_grid": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "roi_grid": [
+      {
+        "cost_per_customer_usd": 10,
+        "assumed_success_rate": 0.1,
+        "roi_multiple": 7.83
+      },
+      {
+        "cost_per_customer_usd": 10,
+        "assumed_success_rate": 0.15,
+        "roi_multiple": 12.25
+      },
+      {
+        "cost_per_customer_usd": 10,
+        "assumed_success_rate": 0.2,
+        "roi_multiple": 16.67
+      },
+      {
+        "cost_per_customer_usd": 10,
+        "assumed_success_rate": 0.25,
+        "roi_multiple": 21.08
+      },
+      {
+        "cost_per_customer_usd": 10,
+        "assumed_success_rate": 0.3,
+        "roi_multiple": 25.5
+      },
+      {
+        "cost_per_customer_usd": 10,
+        "assumed_success_rate": 0.4,
+        "roi_multiple": 34.33
+      },
+      {
+        "cost_per_customer_usd": 10,
+        "assumed_success_rate": 0.5,
+        "roi_multiple": 43.17
+      },
+      {
+        "cost_per_customer_usd": 20,
+        "assumed_success_rate": 0.1,
+        "roi_multiple": 3.42
+      },
+      {
+        "cost_per_customer_usd": 20,
+        "assumed_success_rate": 0.15,
+        "roi_multiple": 5.62
+      },
+      {
+        "cost_per_customer_usd": 20,
+        "assumed_success_rate": 0.2,
+        "roi_multiple": 7.83
+      },
+      {
+        "cost_per_customer_usd": 20,
+        "assumed_success_rate": 0.25,
+        "roi_multiple": 10.04
+      },
+      {
+        "cost_per_customer_usd": 20,
+        "assumed_success_rate": 0.3,
+        "roi_multiple": 12.25
+      },
+      {
+        "cost_per_customer_usd": 20,
+        "assumed_success_rate": 0.4,
+        "roi_multiple": 16.67
+      },
+      {
+        "cost_per_customer_usd": 20,
+        "assumed_success_rate": 0.5,
+        "roi_multiple": 21.08
+      },
+      {
+        "cost_per_customer_usd": 30,
+        "assumed_success_rate": 0.1,
+        "roi_multiple": 1.94
+      },
+      {
+        "cost_per_customer_usd": 30,
+        "assumed_success_rate": 0.15,
+        "roi_multiple": 3.42
+      },
+      {
+        "cost_per_customer_usd": 30,
+        "assumed_success_rate": 0.2,
+        "roi_multiple": 4.89
+      },
+      {
+        "cost_per_customer_usd": 30,
+        "assumed_success_rate": 0.25,
+        "roi_multiple": 6.36
+      },
+      {
+        "cost_per_customer_usd": 30,
+        "assumed_success_rate": 0.3,
+        "roi_multiple": 7.83
+      },
+      {
+        "cost_per_customer_usd": 30,
+        "assumed_success_rate": 0.4,
+        "roi_multiple": 10.78
+      },
+      {
+        "cost_per_customer_usd": 30,
+        "assumed_success_rate": 0.5,
+        "roi_multiple": 13.72
+      },
+      {
+        "cost_per_customer_usd": 40,
+        "assumed_success_rate": 0.1,
+        "roi_multiple": 1.21
+      },
+      {
+        "cost_per_customer_usd": 40,
+        "assumed_success_rate": 0.15,
+        "roi_multiple": 2.31
+      },
+      {
+        "cost_per_customer_usd": 40,
+        "assumed_success_rate": 0.2,
+        "roi_multiple": 3.42
+      },
+      {
+        "cost_per_customer_usd": 40,
+        "assumed_success_rate": 0.25,
+        "roi_multiple": 4.52
+      },
+      {
+        "cost_per_customer_usd": 40,
+        "assumed_success_rate": 0.3,
+        "roi_multiple": 5.62
+      },
+      {
+        "cost_per_customer_usd": 40,
+        "assumed_success_rate": 0.4,
+        "roi_multiple": 7.83
+      },
+      {
+        "cost_per_customer_usd": 40,
+        "assumed_success_rate": 0.5,
+        "roi_multiple": 10.04
+      },
+      {
+        "cost_per_customer_usd": 50,
+        "assumed_success_rate": 0.1,
+        "roi_multiple": 0.77
+      },
+      {
+        "cost_per_customer_usd": 50,
+        "assumed_success_rate": 0.15,
+        "roi_multiple": 1.65
+      },
+      {
+        "cost_per_customer_usd": 50,
+        "assumed_success_rate": 0.2,
+        "roi_multiple": 2.53
+      },
+      {
+        "cost_per_customer_usd": 50,
+        "assumed_success_rate": 0.25,
+        "roi_multiple": 3.42
+      },
+      {
+        "cost_per_customer_usd": 50,
+        "assumed_success_rate": 0.3,
+        "roi_multiple": 4.3
+      },
+      {
+        "cost_per_customer_usd": 50,
+        "assumed_success_rate": 0.4,
+        "roi_multiple": 6.07
+      },
+      {
+        "cost_per_customer_usd": 50,
+        "assumed_success_rate": 0.5,
+        "roi_multiple": 7.83
+      }
+    ],
+    "breakeven_success_rate_by_cost": [
+      {
+        "cost_per_customer_usd": 10,
+        "breakeven_success_rate": 0.0113
+      },
+      {
+        "cost_per_customer_usd": 20,
+        "breakeven_success_rate": 0.0226
+      },
+      {
+        "cost_per_customer_usd": 30,
+        "breakeven_success_rate": 0.034
+      },
+      {
+        "cost_per_customer_usd": 40,
+        "breakeven_success_rate": 0.0453
+      },
+      {
+        "cost_per_customer_usd": 50,
+        "breakeven_success_rate": 0.0566
+      }
+    ],
+    "interpretation": "Breakeven success rate is the minimum win-rate a retention campaign needs to hit for ROI=0 at a given cost/customer. At $30/customer the breakeven is 3.4% - well below any published retention-campaign success rate, which is why this pencils out even under conservative assumptions."
+  }
+}
